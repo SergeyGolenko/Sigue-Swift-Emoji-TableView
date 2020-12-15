@@ -17,16 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="30" reuseIdentifier="cellEmoji" id="d8s-ln-0f4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="30" reuseIdentifier="cell" id="d8s-ln-0f4">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d8s-ln-0f4" id="3Q7-yk-AYe">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Dxq-NG-OFu" kind="show" identifier="0000" id="kaV-Nk-sjE"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,21 +32,24 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="sRx-it-hml"/>
+                    <connections>
+                        <segue destination="Dxq-NG-OFu" kind="showDetail" identifier="0000" id="QBj-Kt-9H5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJ8-bm-7wV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752.17391304347836" y="99.776785714285708"/>
+            <point key="canvasLocation" x="675" y="100"/>
         </scene>
         <!--Deteil Emoji View Controller-->
         <scene sceneID="7Nq-bI-xV3">
             <objects>
                 <viewController id="Dxq-NG-OFu" customClass="DeteilEmojiViewController" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2wz-ag-t8i">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💻" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1x-Ai-6xn">
-                                <rect key="frame" x="0.0" y="125" width="414" height="500"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="500"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="uqP-cp-kqi"/>
                                 </constraints>
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nvs-3y-UpU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="108"/>
+            <point key="canvasLocation" x="1455" y="100"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5fB-Qw-a9O">
@@ -92,7 +92,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnF-jh-UcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-157.97101449275362" y="99.776785714285708"/>
+            <point key="canvasLocation" x="-103" y="100"/>
         </scene>
     </scenes>
     <resources>

@@ -10,13 +10,11 @@ import UIKit
 class DeteilEmojiViewController: UIViewController {
     
     
-    let item = "🤼‍♂️"
+    var item = ""
     
     @IBOutlet weak var emojiLabel: UILabel!
     
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         emojiLabel.text = item
